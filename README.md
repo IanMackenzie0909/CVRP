@@ -691,8 +691,3 @@ cvrp_experiment_runner.py (實驗執行器)
 ├── Phase 1: Quick Screening
 ├── Phase 2: Intensive Testing
 └── Result Analysis & Visualization
-```
-
-**Total Lines of Code:** ~700 lines
-
----
