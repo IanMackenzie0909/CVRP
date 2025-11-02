@@ -33,7 +33,7 @@
 | PMX + swap | 878.97 | 937.53 | 44.17 | 834.63 | 1/6 (17%) |
 | PMX + insert | 883.74 | 936.83 | 35.61 | 858.58 | 0/6 (0%) |
 
-**Key Finding:** OX+inversion and PMX+inversion dominated the rankings, appearing in top 2 positions in 83% of experiments.
+**Key Finding:** OX+inversion and PMX+inversion dominated the rankings, appearing in the top 2 positions in 83% of experiments.
 
 ---
 
@@ -206,7 +206,7 @@
 | 9 | 847.27 | OX+insert | Exp 4 | 15.44% | 5 |
 | 10 | 849.20 | OX+swap | Exp 4 | 15.71% | 5 |
 
-**Observation:** All top 10 solutions use 5 routes. OX+inversion appears 4 times in top 10.
+**Observation:** All top 10 solutions use 5 routes. OX+inversion appears 4 times in the top 10.
 
 ---
 
@@ -222,7 +222,7 @@ Average std: 35.47
 
 Performance grade: A+ (Excellent)
 Stability: High (consistent top performer)
-Recommendation: Best for finding global optimum
+Recommendation: Best for finding the global optimum
 ```
 
 #### PMX + inversion (120 runs across 4 experiments)
@@ -315,7 +315,7 @@ Both configurations perform similarly on average.
 **Route Characteristics:**
 - Route 5 is exceptionally efficient (shortest, near depot)
 - Routes 2-4 achieve very high capacity utilization (97-98%)
-- Route 4 is longest but covers many customers (10 nodes)
+- Route 4 is the longest but covers many customers (10 nodes)
 - Balanced geographic distribution
 
 ---
@@ -338,7 +338,7 @@ Median: 897.5
 Mode range: 850-900
 ```
 
-**Key Insight:** Only 1.4% of runs achieved distance < 820, confirming that 815.57 is an exceptionally rare and high-quality solution.
+**Key Insight:** Only 1.4% of runs achieved a distance < 820, confirming that 815.57 is an exceptionally rare and high-quality solution.
 
 ---
 
@@ -346,7 +346,7 @@ Mode range: 850-900
 
 ### 5.1 Final Configuration Ranking
 
-Based on comprehensive analysis of 540 total runs:
+Based on a comprehensive analysis of 540 total runs:
 
 | Rank | Configuration | Score | Strengths | Weaknesses |
 |------|---------------|-------|-----------|------------|
@@ -362,7 +362,7 @@ Based on comprehensive analysis of 540 total runs:
 ### 5.2 Why OX + Inversion Wins?
 
 **1. Crossover Analysis:**
-- OX (Order Crossover) preserves relative order of customers
+- OX (Order Crossover) preserves the relative order of customers
 - Better for maintaining "good customer sequences"
 - PMX (Partially Mapped Crossover) preserves absolute positions
 - OX showed 3.5% better average performance
@@ -377,7 +377,7 @@ Based on comprehensive analysis of 540 total runs:
 - OX + inversion combination allows:
   - OX explores different customer groupings
   - Inversion optimizes local route directions
-  - Together they balance exploration and exploitation
+  - Together, they balance exploration and exploitation
 
 ---
 
@@ -393,7 +393,7 @@ Based on comprehensive analysis of 540 total runs:
 2. **Show Multi-Configuration Analysis**
    - Present Phase 1 screening methodology
    - Show Phase 2 intensive testing results
-   - Demonstrate systematic approach to finding best config
+   - Demonstrate a systematic approach to finding the best config
 
 3. **Statistical Validation**
    - Include 6-experiment aggregation
@@ -415,29 +415,9 @@ Based on comprehensive analysis of 540 total runs:
 - Advanced hybrid methods (GA+2opt, LNS): 5-15%
 - State-of-the-art (Adaptive LNS, ML-enhanced): 2-8%
 
-**Your Result: 11.12%**
+**The Best Result of the Experiments: 11.12%**
 
-**Assessment:** Your GA with OX+inversion achieves performance comparable to **classical metaheuristics with local search enhancements**, which is excellent for a pure GA implementation.
-
----
-
-### 5.5 Future Improvement Potential
-
-**If you had more time, adding these could reduce gap to ~5-8%:**
-
-1. **2-opt Local Search** (Post-optimization)
-   - Apply to each route after GA converges
-   - Expected improvement: 3-5%
-
-2. **Adaptive Parameters**
-   - Dynamic mutation rate based on diversity
-   - Expected improvement: 1-2%
-
-3. **Hybrid Initialization**
-   - Start with nearest-neighbor solutions
-   - Expected improvement: 1-3%
-
-**Combined potential:** Could achieve gap of 6-7% (distance ~770-780)
+**Assessment:** The GA with OX+inversion achieves performance comparable to **classical metaheuristics with local search enhancements**, which is excellent for a pure GA implementation.
 
 ---
 
