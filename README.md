@@ -1,6 +1,3 @@
-# CVRP
-GA on CVRP
-
 # Capacitated Vehicle Routing Problem (CVRP)
 ## Genetic Algorithm Implementation Report
 
