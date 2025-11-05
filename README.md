@@ -1,5 +1,5 @@
 # Capacitated Vehicle Routing Problem (CVRP)
-## Genetic Algorithm Implementation Report
+Genetic Algorithm Implementation Report
 
 **Date:** November 2, 2025  
 **Problem Type:** CVRP with 35 customers, 5 vehicles, capacity 100
